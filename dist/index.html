@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACLlBMVEUAAAAjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICIjICImIyUoJScnJCYkISMnHyIoHyElICIlIiR7eXq3tre2tbWbmZoyLzEmHiGGEhS3Cg22Cw1jFxkhICKnpqf////X1tc5NzkoHiC5Cg3/AAL/AAOEEhQfICKnpabW1ta4Cg2DEhXn5+empaaioaGjoqOLiYovLS8pHiDdBQijDRCiDhCiDRBaGBrHxsYsKiwiHyEiICIqHyGvDA4mICLHxsctKiwnICLIx8cwLS8mIySwCw4kICLq6eqvrq+rqqutrKySkZIwLjDhBAetDA6rDA+sDA9fFxrX1tbu7u6/vr+8u7y+vb2gn58yMDLnBAa9Cgy8CgxmFhkgICLIx8gjISOxCw4rHyEtKyzGxsYqKCkfHB4gHR8hHiDf39+HhoeBf4GBgIGCgYJwbm8pHiGwDA4nHyGKiYrR0NHPzs/R0NA0MjQnHiCYDxLRBwnPBwqREBMqJykvLC4uLC4sKisvHiAuHiBC6DDzAAAAQ3RSTlMAAAMNGy9FVV5GCFqNvNPh7PL1XDABWaLk/AIpe835gR3b/QS+BRTohRUcoPuhLbXGtCD+rHzabrMKDhrpFr/6zgniJymUwgAAAAFiS0dEWO21xI4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfmBg8ENR6E3eDAAAADTElEQVRIx6WXZ1sTQRCAbyAV0gmQSy4QIAoJSJDQRARhEVBEsaGAAXuvEMSu2HvDir33AorCvzPXklzJ3UHej3nuzbbZ2RkMEwVSUlVqjVan0+rVqtQUwJQCkKZONxhNZovVZrNazCajIcOeBkr+ADJVWdkOHHHAHdlZqkw5HZwuwp2DRMhx57qcUjqAh8jLRwnIzyM8iScPBRovjiTAvfo5kGDYuUQhkqGwyCc6OPiLS+RchErm+UFk3NJAvrwbWXmglD92xC1TopKU8WwA/3ylLkKBco4NvmJFc6YJVvjiZEipVLBXcbtWGYt2AL3sGXEp1EcnDh4v9VPzEj4trahtKY9l5KdeD7BXgaAW3L68YwWXjpWdq1avWctlXRd5YARzTcBVRQ3cvn4Dn+6e3o2hPg6h/k3kx1UuoFdMBGl5s0De0tO7tY/HNkoOEtSqwe9GM5eRm1w1QFbObOSS6sjQkJaNEsrdIjK9ZoRqFkRku4Mrb9+xk2XX7j17aXnf/gMMBw910Z877BE5HefKhwcGY4SHaPnIcJiFDRQ8HTCnAXHlo8cG42KJlduEYWZwYrVGRfLxsEA21mIqE08+cbK9meUUK58eGmY5w35vWoipzTz57Mg5lvMXLjIbdunyFYar15gNQ2Y1prHw5HiuSxwVsmgwrVVClggShKxaTGebrWzTJSdLTjsWnqEo/XHT1vM37MbNWyy379xldvve6H2G0QcP2Q3TC4/qUWdLLA09Zs75yRg3DTFHJQgSxRFmUomE51OFsR0JT8HFePb8xUuWV2HpiwEZvCv5+s3bdwzvPwx8TCjjGSLJQPScRWQqGUilISmZSkOKEqBQphKgstQrlKnUGxk6N0jLiV+M0KfPPDeYSz910efmy9dvXL6P/Pj5a3xiYmL89zBPZp6b6EOH/kz+5TL5rxWNTU1PT08N8dzoQxd9YtGgAIS4+ZYl+sSSj3sdmhF1scc9UvoV4TNx8aICmH1Bs4hTDYE/oFzmlVJJFXHJlY+kXl6hoBjDK8pFq17wVcqWY3UJSmbyxPT10sV6faJiHUuuTcCYBqVBTG1YLNOg0NfEU10jbI1qqj2yrRE9+UY72ZQ10U1ZE9WUNSpqypg/UNQO/gfqUUkz9LIaNQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMi0wNi0xNVQwNDo1MDozMSswMDowMNv5eLcAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjItMDYtMTVUMDQ6NTA6MzErMDA6MDCqpMALAAAAIHRFWHRzb2Z0d2FyZQBodHRwczovL2ltYWdlbWFnaWNrLm9yZ7zPHZ0AAAAYdEVYdFRodW1iOjpEb2N1bWVudDo6UGFnZXMAMaf/uy8AAAAYdEVYdFRodW1iOjpJbWFnZTo6SGVpZ2h0ADE5MkBdcVUAAAAXdEVYdFRodW1iOjpJbWFnZTo6V2lkdGgAMTky06whCAAAABl0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL3BuZz+yVk4AAAAXdEVYdFRodW1iOjpNVGltZQAxNjU1MjY4NjMxR0w9AwAAAA90RVh0VGh1bWI6OlNpemUAMEJClKI+7AAAAFZ0RVh0VGh1bWI6OlVSSQBmaWxlOi8vL21udGxvZy9mYXZpY29ucy8yMDIyLTA2LTE1L2NlYzMwODZlYzAzYjk1OTU2YmNkZGU1OGI2MGUxMWViLmljby5wbmcPcxzWAAAAAElFTkSuQmCC" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>EF Frontend Dev Task</title>
+    <script type="module" crossorigin src="/assets/index-a2584c58.js"></script>
+    <link rel="stylesheet" href="/assets/index-37aeced6.css">
+  </head>
+  <body>
+    <!-- Header Section including Navbar -->
+    <header class="header">
+      <div class="header-head">
+        <div class="menu-and-brand">
+          <button class="menu-btn menu-btn-open">
+            <img src="/assets/menu-1c386394.svg" alt="" class="icon menu-icon" />
+          </button>
+          <button class="menu-btn menu-btn-close hidden">
+            <img src="/assets/cross-dd069dcc.svg" alt="" class="icon menu-icon" />
+          </button>
+          <a href="#" class="brand">
+            <img
+              src="data:image/webp;base64,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"
+              alt="brand logo"
+              class="brand-logo"
+            />
+          </a>
+        </div>
+
+        <!-- navbar -->
+        <nav id="navbar" class="navbar hidden">
+          <!-- Supporting Nav -->
+          <ul class="pre-nav">
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Trending</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Pre-orders</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Upcoming</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Support 24/7</a>
+            </li>
+          </ul>
+          <!-- Main Nav -->
+          <div class="main-nav-with-search">
+            <ul class="main-nav">
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img src="/assets/pc-89104fdd.svg" alt="PC" class="icon" />
+                  PC
+                  <img src="/assets/down-48307adc.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img
+                    src="/assets/playstation-245f1fcd.svg"
+                    alt="playstation"
+                    class="icon"
+                  />
+                  Playstation
+                  <img src="/assets/down-48307adc.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img src="/assets/xbox-70aeea1f.svg" alt="Xbox" class="icon" />
+                  Xbox
+                  <img src="/assets/down-48307adc.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img
+                    src="/assets/gamepad-42ee60d0.svg"
+                    alt="Ninetendo"
+                    class="icon"
+                  />
+                  Ninetendo
+                  <img src="/assets/down-48307adc.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+            </ul>
+            <div class="searchField">
+              <input
+                class="search-input hidden"
+                type="text"
+                id="searchInput"
+                name="search"
+                placeholder="Minecraft, RPG, multiplayer..."
+              />
+              <button class="search-adv-btn hidden">Advanced search</button>
+              <button class="btn-circle search-btn">
+                <img
+                  src="/search.svg"
+                  alt="search"
+                  class="icon search-btn-icon"
+                />
+              </button>
+            </div>
+            <button class="btn-circle back-btn hidden">
+              <img src="/back.svg" alt="back" class="icon" />
+            </button>
+          </div>
+        </nav>
+
+        <!-- User Section -->
+        <div class="user-section">
+          <div class="user-item">
+            <a href="#" class="user-item-link">
+              <img src="/assets/cart-dce5a6a4.svg" alt="cart" class="icon" />
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="#" class="user-item-link">
+              <img src="/assets/user-dfb4401c.svg" alt="user" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content">
+          <h5 class="btn time-limit">In 15 days</h5>
+          <h3 class="hero-title">
+            Starfield disital premium edition + early access
+          </h3>
+          <div class="hero-sub-content">
+            <h5 class="decrease-price">-25%</h5>
+            <p class="price">74.89&euro;</p>
+          </div>
+        </div>
+        <div class="cta">
+          <span class="corner-1"></span>
+          <span class="corner-2"></span>
+          <span class="corner-3"></span>
+          <span class="corner-4"></span>
+          <button class="cta-btn">+ Early access</button>
+        </div>
+      </section>
+    </header>
+
+    <!-- Trending section -->
+    <section class="trending">
+      <div class="trending-head">
+        <h3 class="trending-caption">Trending</h3>
+        <button class="btn">View all</button>
+      </div>
+      <div class="trending-items">
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="/assets/game2-a6d748e4.jpg" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-33%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Need For Speed</h4>
+            <p class="trending-item-price">69.99&euro;</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="/assets/bg-cd611bf7.jpg" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-21%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Call of Duty</h4>
+            <p class="trending-item-price">79.99&euro;</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="/assets/game1-f6138294.webp" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-29%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Assasins</h4>
+            <p class="trending-item-price">49.99&euro;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opended Menu Item -->
+    <div class="menu hidden">
+      <section class="menu-item">
+        <div class="menu-item-head">
+          <h4 class="menu-item-title">Platforms</h4>
+          <button class="menu-item-btn">View all</button>
+        </div>
+        <ul class="menu-item-list">
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/steam-766f5a3c.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Steam
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/ubisoft-73a72423.jpg"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Ubisoft Connect</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAk1BMVEX/R0f/////PDz/rq7/MjL/Njb/RUX/QUH/sLD/Pz//Li7/PT3/OTn/s7P/Ly//NDT/goL/4uL/y8v/lZX/+vr/vr7/cHD/paX/kJD/Zmb/UVH/xsb/5OT/eXn/urr/9fX/XFz/7u7/nJz/YGD/1NT/fHz/29v/bGz/09P/iIj/n5//TEz/kZH/6ur/Y2P/Vlb/IyPX4ciRAAAMq0lEQVR4nOVdaXujOg8lxJiwJJCFLM2edjKd6Zvp/f+/7oUsxQFh5IUAyflwn/vMdFJOkGVZOpKNTuXYDj+j7mEeThe7ty/DML7edotpOD90o8/htvpfb1T54avlLNwREvi+59g2jWEkSP7Hth3P9wNCduFsuaryIapieIrG/2Jqnn0hVQxqezHR93F0quhJqmB42oQO8R27hNsdT8cnXtiv4mVqZziaG8QsfXPw2zQJnY90P5BWhpNoTSxHhh37LtfRROdDaWS4XA98Ecssgu0P1kt9j6WL4XFuaaF3I2nNj5qeTA/DzTdRMs48qEO+N1qeTQPD/cHy9dK7kvSDw1798ZQZrkLXq4LfmaPnhsobiCLD4dp1KqJ3geNOhzUyXE0H+rxLEeyBGkcFhvvQrZ7fmaP7a18Hw8OgWvtk4bhj6ShAluHG9B7GL4Hny+4dcgyHO6sq/1kEau3klqMUw/GDFuA9bHf8IIYf1KyBXwKTfjyC4dx9tIGmoO6fyhkejcd6mCw8QzQiF2Q4q/EFXkDdWYUMJwurZn4J/IXQ3ijC8OjV4ULzsD0RSxVg2KvdQm+gbq8KhiGpmxiDINTOcPJe1yYIw3zHLkYkwxNtxhJMYVNkChnH8Bg0ZQmmoAHO36AYjhrjY1hQF5U9xjCM3LrJFMCN9DDsN5VgTLGvg2F3UDcPDgZddYaNJoihWMaw32yCMcUyQy1h2Fgnk6LM3fAZjppPMKbI3zS4DI9tIBhT5G79PIanBkYyEGjAC+A4DCe0HQQTcQcnDOcwfG9asF0M+12GYdis4xIfZvF5sZBhL6j7qYUQFJ76ixi2xI2mKHSoBQwnldV1qwL1CrxNAcNFe7zMDfZChOGsCXlRUVhwqhhk2LpFeAG8FEGGRtsW4QUUJgP82Z96iy/y8KDKFMDwo502msD9RDFsTTiaB6UYhuM2RWtZmPlCeI7hsL02msDNyRlyDHft2+tZ2Lsyhps27vUsrKzuJsNwUomO8pGgJp/huK1bYQpvzGO4b7ebucDdcxiGjxPjVQcnLGa4eoZXGL/EVSHDabt3ihvsaRHDYdNrFFgMhgUMn+QVxi9xDTN8klWYgF2JDMOncKQXsO40ZfgUe+ENzJ6YMjy0P5xJ4R0AhvLKbYeo4e4X6zmdUivPcOPLfpo376jhF+PDg76eakIq7f9h+C37CqmjSHDJSAK9P52Z9Fd991TfWYZHaeUhUe2GZAoI1JwofNf3j3VLnt4YzmW3ivsQSQJzxsMFiepATx7Fua2dG0NpPzPYqxFk8+v27/MfHXR4mx9fc2W4lDV+v1yUxMcb89Xevq03HXbqL+8YriVDUvqmSJD1K/6ttKKlbnILTi8MJ7KnCr7QoxxsIMV8W1pytoMJwzCSNFKwUCCC34ztsN/WlwY79SOGoaSRnp27CiJme78LHHTY6dVMLwwlN8NAcSucmMxW6N391f802ClJGY7k0sBX5y4PtoyXDRw01DCt0Q9Dye0+k7YTxpHxb7nA4UM9pXLZ9M8M5eppvmCLVQ7MtkdJbtrQXPk0d6kJJ/85SS3DNLaVxN1WCAQOUiNg7kBOV4Z9qVVt/+n3lMAQBL+tT2U7NTdXhqHcXmGbamA+Kl/1S6CsJ7DDK8Pa9U/ZYsoNqvNSzjuQIbsMNYLaBSt1pGqnyUI05EM2bSCFQm3VBGcSuMUMxzXnSZ11EcG7oEfqo8dnhv/qTeYDW2GKpdoKsv+dGda8DC1uS8gvNQMjCcNVvWLgvHji3k7VhAXBKmYoncDQA7dkTJKanfrLmOGs1my+eeATjM+uKnbqzWKGkhGNHkBCtAy2KoNi4qjG6OzqjGgGgJgwi0jBUdBdzLBOV+r8KieoVpsmHWNbI0MaoPI8WyJvZmRrDMVsgFryyDntnAYtxh7YPTbydhoMjU+xzUIpiZ85KyQRRw5TqCn0t7Sd+p+GWNytlMTP+n0XaKpbEiiK20vbqR8ZXZHtUClzMcqsePNv/meSUBtK4fVlRaFe1ziIbKjwWRyJjI3SL+Bnzsf6AFiesscD52DMBf4poKLGI5s7GwBzuy4pRBoAdip5GLbnhkBIA3dsIJHN0ztQx+C1XAFVXXuSWevQmOLXMCYAKUSmJkh9YCv8e8tOBUAHulxLK50aCzRD8FvHIqs/gDicfl4ztfJ2epIq1tCFgdYFgN86FtnHA1vpmLcEZTakRBp0Z6ArytC3jkbWFUIlj7sdAVJ4yDRK0DfjC/mjSoWmbI8DVPK4jz4hi5GyUyw/tXBtmxldAFb/M1Va6NihR0xUAL3hGlD9z0Y8YBZVj5gIhNZwDaz+5zL4UOuylMgXZ6fcyRNlyIZrUPWfiXica+WGAP70r7CdfuF8Kf236afoQVn4z16/ANmUJ1T9ZyIef9zrXjDb539QVEwU+1KcaVOmKub/B/zmrVtYRcv4eNAppw9e1HR+hajoLd4P8THNDWCSGp9LgZwy4yShQyMLQdFbHNMIxKUXgElqfN4WcsrMRleePxUTE8VxqXC6FEpS43PvoFNOJzgUlhJTiImJ4rOFyPkwAfgl4+t80FbIJJqKS4kphERv8flQ6IxfcEbEawogTTiT1MbJcUXERPEZXyhPA5/M8XocUBPO7Ca40FBkYIDXFcy1gWdEvNlAJwYm4sFqkATERH4kli8Fz4j4LQo0wtQAwNwUCLyIy/8Uy3mDZ0T8GRqqZzOdxwSdJcEv/GAoVLcAwxH8kcYHZjkxBmAXKxZyQIuJyFao9gQ5AnxDGLgVpgbAVSzkgBUTEaH6IXhGxKdqoXRyNzUAsRMoUkx0rh+igxrwHeDLQlA6mcnziqr+cUHGuQaMruND72D/X4AE8fL/mq0pWYIFA9w0snMdH6vFUErpw2Dr15QWHr9M0wK2mVzaA8JZi4HU0yA0BaK4j9cpDwTYpjBiorOeBulMlVL6MAR0eVASHHOgIXhdG05TIAQhDbAD2Gn5ofSqa8NoE6ml9V7JM8T6DSA7LRUTXbWJmNgbKloqQjQdAYTEpWKiq74UoREuSQ/JQDj1CRVrysREV40wQuet2jsCQLzMAh29+Amw83EUpdVX7h3JoydeggDtlDvM+UerX9ZvodxGmYeUzAny59yo8affomwhqrZRApCTqkF2yhMT/fTMlByZlScK5CEpi4UqHhxrSPue+L1riBSmMGQl+JCdFouJmN41bv8hJoUpCPl2H+hhCicCM/2HvNDUVlFgwFAYH0qBM9i2yC0zPaS8PmDn763YpQt9lUqus849Tr+g9HLXB8wL3BzOuU0OSqVqoGOu4PPuerml+/GbjLt+fOmZCg3G/UyFuttKqkBmLobCDKWGIjvbRH4+TVORm08jP2OoocjNGKpSblQH8nOiFGZ9NRLArK/n8jXQvLYXmLn3/HMTn3/25QvML33+GbQvMEf4WV5i8SzoZ1mJnHnez+FOeTPZn2NP5M7Vf/67EeRztY1B2f0Wz39HyQvcM/MCdwU9/31PL3BnV6vvXQNU6JD0Xn0mY00Aa7mvef/hC9xhWW07alUo0MS86l2yL3AfcPuWouidzp1Or12lGiJ8L/cL3K0uO0ykFtjvxTQ4DCetCVAp5SiYeUN1TlxpY3NAgz2HBXds0NFtBUW+dpI/GGnUhj3D5QvvSkY/Rc2n6JbMzSkbbtVvei0DGtEnxLDTbTbFQWlPX/mAskZTLCeIYNjpN3ctumUmimMYu5uGbhplTgbNMN40mkiRlmwTIgw7xwZGNzTANUkgRyHuadPCcJsiBzthhz1O3pt1mDLfse2C+HGWYZOOxATfQSAwsLPXGH9D3cITvRLDztFrxmK0PZFGLKGhq5NFE+qn/kKoY1dwrOysdkulrmAzpOjg3OFXvWUbzxBtFRQfDTyv8TVSV/zCRYnhxx+0rq3RpBJjD6TGO4/dOpyq7UpN5pAbYL3aPVwVTq2d3Lh02RHdG/OxHsfzZWceyA8hH7uPk/k5cgaqyLCzDx+0HG033Ms/psog+c5qPaieoz2YllyYVCHDOABYV2yrjjtVuY9BnWH8HkO3snox9dxQ6f1pYRivx4OldnVYET/fOuzVH08Dwxibb6J632SWnkO+9czE0cMwPjvOLV+f17F9a65rGIcuhjGW64EWkrY/WCteh81CI8P4hBytiaVkrtSxyDrSOpNKK8MEo7lBTKnLiqltEjrXPoVDO8MYp03oEN8RsVjq+MQL+8pbA4AqGCY4ReN/JPC90rdJbc8PyPs4Upncz0NVDM9YLWfhjsREfc+x7WQ64IVUDNt2PD+mRnbhbFnFq/tBpQwv2A4/o+5hHk4Xu7fkJoavt91iGs4P3ehzKDKUVRL/BwKlyrGlwFumAAAAAElFTkSuQmCC"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              EA App</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/battle-b90bbd2a.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Battle.net</a
+            >
+          </li>
+
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/rockstar-ba8cacfb.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Rockstar</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/gog-3a819443.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              GOG.com</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAY1BMVEX/////uQB/ugAApO/yUCL/+/T/tAD5wbfxRADyShT2j3vO47R4twCpz3S02/gAoO50wPT4+/R0tQD0+f4Ane771M3xPQD1iXT/rgD95uLL4a5tsgD4s6ejzGj6/f+u2PgAmO3ics+kAAABEElEQVR4nO3biQ2CUBREUVfAXVEBd/qv0sRvBy8/MXhuAZOcAmY0kiRJkiRJkiRJkiRJkiRJv9qljHVOM9dVqGtGYdlUkZr2s3K4rUPdcgqrWaTFMgnrSaiakJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQ8J+EzSJS9fvftXO7jNTek/CxCfXIKJSk/D2PsZ5pZh4so/DVnyL1+wTsilBdRuF2N420+wqLcaiCkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkHBAwuG/8yRJkiRJkiRJkiRJkiRJUqw3TWrkMTMBDxwAAAAASUVORK5CYII="
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Microsoft Store</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/epic-971d15e1.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Epic</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="menu-item">
+        <div class="menu-item-head">
+          <h4 class="menu-item-title">Prepaid cards</h4>
+          <button class="menu-item-btn">View all</button>
+        </div>
+        <ul class="menu-item-list cards">
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/steam-766f5a3c.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Steam Gift Cards</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/ig-a9b3b538.jpg"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              IG Gift Cards</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="/assets/blizzard-aecd3dbc.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Blizzard Gift Cards</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+  </body>
+</html>
