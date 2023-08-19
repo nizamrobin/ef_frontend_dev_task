@@ -5,15 +5,321 @@
     <link rel="icon" type="image/svg+xml" href="/fe.png" />
     <link rel="stylesheet" href="style.scss" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>EF Frontend Dev Task</title>
   </head>
   <body>
+    <!-- Header Section including Navbar -->
     <header class="header">
-      <h1>EF Frontend Dev Task</h1>
-      <nav class="navbar"></nav>
-      <section class="hero"></section>
+      <div class="header-head">
+        <div class="menu-and-brand">
+          <button class="menu-btn menu-btn-open">
+            <img src="./public/menu.svg" alt="" class="icon menu-icon" />
+          </button>
+          <button class="menu-btn menu-btn-close hidden">
+            <img src="./public/cross.svg" alt="" class="icon menu-icon" />
+          </button>
+          <a href="#" class="brand">
+            <img
+              src="./public/brand.webp"
+              alt="brand logo"
+              class="brand-logo"
+            />
+          </a>
+        </div>
+
+        <!-- navbar -->
+        <nav id="navbar" class="navbar hidden">
+          <!-- Supporting Nav -->
+          <ul class="pre-nav">
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Trending</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Pre-orders</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Upcoming</a>
+            </li>
+            <li class="pre-nav-item">
+              <a href="#" class="pre-nav-item-link">Support 24/7</a>
+            </li>
+          </ul>
+          <!-- Main Nav -->
+          <div class="main-nav-with-search">
+            <ul class="main-nav">
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img src="./public/pc.svg" alt="PC" class="icon" />
+                  PC
+                  <img src="./public/down.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img
+                    src="./public/playstation.svg"
+                    alt="playstation"
+                    class="icon"
+                  />
+                  Playstation
+                  <img src="./public/down.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img src="./public/xbox.svg" alt="Xbox" class="icon" />
+                  Xbox
+                  <img src="./public/down.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+              <li class="main-nav-item">
+                <a href="#" class="main-nav-item-link">
+                  <img
+                    src="./public/gamepad.svg"
+                    alt="Ninetendo"
+                    class="icon"
+                  />
+                  Ninetendo
+                  <img src="./public/down.svg" alt="down arrow" class="icon" />
+                </a>
+              </li>
+            </ul>
+            <div class="searchField">
+              <input
+                class="search-input hidden"
+                type="text"
+                id="searchInput"
+                name="search"
+                placeholder="Minecraft, RPG, multiplayer..."
+              />
+              <button class="search-adv-btn hidden">Advanced search</button>
+              <button class="btn-circle search-btn">
+                <img
+                  src="/search.svg"
+                  alt="search"
+                  class="icon search-btn-icon"
+                />
+              </button>
+            </div>
+            <button class="btn-circle back-btn hidden">
+              <img src="/back.svg" alt="back" class="icon" />
+            </button>
+          </div>
+        </nav>
+
+        <!-- User Section -->
+        <div class="user-section">
+          <div class="user-item">
+            <a href="#" class="user-item-link">
+              <img src="./public/cart.svg" alt="cart" class="icon" />
+            </a>
+          </div>
+          <div class="user-item">
+            <a href="#" class="user-item-link">
+              <img src="./public/user.svg" alt="user" class="icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-content">
+          <h5 class="btn time-limit">In 15 days</h5>
+          <h3 class="hero-title">
+            Starfield disital premium edition + early access
+          </h3>
+          <div class="hero-sub-content">
+            <h5 class="decrease-price">-25%</h5>
+            <p class="price">74.89&euro;</p>
+          </div>
+        </div>
+        <div class="cta">
+          <span class="corner-1"></span>
+          <span class="corner-2"></span>
+          <span class="corner-3"></span>
+          <span class="corner-4"></span>
+          <button class="cta-btn">+ Early access</button>
+        </div>
+      </section>
     </header>
-    <!-- <div id="app"></div> -->
+
+    <!-- Trending section -->
+    <section class="trending">
+      <div class="trending-head">
+        <h3 class="trending-caption">Trending</h3>
+        <button class="btn">View all</button>
+      </div>
+      <div class="trending-items">
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="./public/game2.jpg" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-33%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Need For Speed</h4>
+            <p class="trending-item-price">69.99&euro;</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="./public/bg.jpg" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-21%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Call of Duty</h4>
+            <p class="trending-item-price">79.99&euro;</p>
+          </div>
+        </div>
+        <div class="trending-item">
+          <div class="trending-content">
+            <img src="./public/game1.webp" alt="" class="trending-item-img" />
+            <h5 class="decrease-price">-29%</h5>
+          </div>
+          <div class="details">
+            <h4 class="trending-title">Assasins</h4>
+            <p class="trending-item-price">49.99&euro;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opended Menu Item -->
+    <div class="menu hidden">
+      <section class="menu-item">
+        <div class="menu-item-head">
+          <h4 class="menu-item-title">Platforms</h4>
+          <button class="menu-item-btn">View all</button>
+        </div>
+        <ul class="menu-item-list">
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/steam.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Steam
+            </a>
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/ubisoft.jpg"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Ubisoft Connect</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/ea.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              EA App</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/battle.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Battle.net</a
+            >
+          </li>
+
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/rockstar.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Rockstar</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/gog.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              GOG.com</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/ms-store.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Microsoft Store</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/epic.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Epic</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="menu-item">
+        <div class="menu-item-head">
+          <h4 class="menu-item-title">Prepaid cards</h4>
+          <button class="menu-item-btn">View all</button>
+        </div>
+        <ul class="menu-item-list cards">
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/steam.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Steam Gift Cards</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/ig.jpg"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              IG Gift Cards</a
+            >
+          </li>
+          <li class="menu-list-item">
+            <a href="#" class="menu-list-item-link">
+              <img
+                src="./public/blizzard.png"
+                alt=""
+                class="icon menu-list-item-img"
+              />
+              Blizzard Gift Cards</a
+            >
+          </li>
+        </ul>
+      </section>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
