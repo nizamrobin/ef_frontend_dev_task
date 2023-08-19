@@ -95,7 +95,10 @@ button {
   padding: 1rem;
   position: relative;
   @media screen and (min-width: 768px) {
-    height: 65rem;
+    height: 75rem;
+  }
+  @media screen and (min-width: 820px) {
+    height: 90rem;
   }
   &-head {
     display: flex;
@@ -535,7 +538,6 @@ button {
       position: absolute;
       bottom: 0;
       transform: translate(-5%, -5%);
-      font-family: var(--font-secondary);
     }
   }
   .details {
