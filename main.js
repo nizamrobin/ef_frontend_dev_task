@@ -6,6 +6,8 @@ let menuLink = document.querySelector(".menu");
 let back_btn = document.querySelector(".back-btn");
 let search_btn = document.querySelector(".search-btn");
 
+let overlay = document.getElementById("overlay");
+
 let window_Width = window.addEventListener("change", function () {
   return window.innerWidth;
 });
@@ -34,8 +36,22 @@ document.querySelectorAll(".main-nav-item-link").forEach((link) => {
   link.addEventListener("click", openNavLink);
 });
 
-function openNavLink() {
+function openNavLink(e) {
   menuLink.classList.remove("hidden");
+  // overlay to show
+  overlay.classList.add("overlay");
+  // Nav to work and highlight active nav link
+  const targetElement = e.currentTarget;
+  document.querySelectorAll(".main-nav-item-link").forEach((link) => {
+    if (link !== targetElement) {
+      link.classList.add("topper");
+      targetElement.classList.remove("topper");
+      targetElement.classList.add("toppest");
+    } else {
+      link.classList.remove("topper");
+      targetElement.classList.add("toppest");
+    }
+  });
   if (window.innerWidth < 768) {
     search_btn.classList.add("hidden");
     back_btn.classList.remove("hidden");
@@ -44,12 +60,18 @@ function openNavLink() {
 // Close menu on click anywhere
 document.addEventListener("mouseup", function (e) {
   if (!menuLink.contains(e.target)) {
-    return menuLink.classList.add("hidden");
+    menuLink.classList.add("hidden");
+    document.querySelectorAll(".main-nav-item-link").forEach((link) => {
+      link.classList.remove("topper");
+      link.classList.remove("toppest");
+      document.getElementById("overlay").classList.remove("overlay");
+    });
   }
 });
 // back button functionality
 back_btn.addEventListener("click", function () {
   menuLink.classList.add("hidden");
+  targetElement.classList.remove("toppest");
   if (window.innerWidth < 768) {
     back_btn.classList.add("hidden");
     search_btn.classList.remove("hidden");
