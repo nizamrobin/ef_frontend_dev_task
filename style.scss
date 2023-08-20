@@ -155,6 +155,10 @@ button {
   width: 5rem;
   height: 5rem;
   z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 .brand-logo {
   width: 5rem;
@@ -177,6 +181,8 @@ button {
   width: 100vw;
   padding: 5rem 3rem;
   z-index: 1;
+  position: fixed;
+  height: 100vh;
   @media screen and (min-width: 768px) {
     visibility: visible;
     transform: initial;
@@ -596,10 +602,11 @@ button {
   background-image: linear-gradient(rgb(30, 37, 50), rgb(40, 41, 60));
   padding: 1rem;
   color: #fff;
-  position: absolute;
+  position: fixed;
   top: 9rem;
   z-index: 1;
   @media screen and (min-width: 768px) {
+    position: absolute;
     top: 13rem;
     border-radius: 1rem;
     padding: 2rem;

@@ -39,7 +39,9 @@ document.querySelectorAll(".main-nav-item-link").forEach((link) => {
 function openNavLink(e) {
   menuLink.classList.remove("hidden");
   // overlay to show
-  overlay.classList.add("overlay");
+  if (window_Width >= 768) {
+    overlay.classList.add("overlay");
+  }
   // Nav to work and highlight active nav link
   const targetElement = e.currentTarget;
   menuLink.classList.add("toppest");
