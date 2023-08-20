@@ -42,6 +42,7 @@ function openNavLink(e) {
   overlay.classList.add("overlay");
   // Nav to work and highlight active nav link
   const targetElement = e.currentTarget;
+  menuLink.classList.add("toppest");
   document.querySelectorAll(".main-nav-item-link").forEach((link) => {
     if (link !== targetElement) {
       link.classList.add("topper");
