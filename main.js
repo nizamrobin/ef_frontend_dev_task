@@ -74,7 +74,7 @@ document.addEventListener("mouseup", function (e) {
 // back button functionality
 back_btn.addEventListener("click", function () {
   menuLink.classList.add("hidden");
-  targetElement.classList.remove("toppest");
+  // targetElement.classList.remove("toppest");
   if (window.innerWidth < 768) {
     back_btn.classList.add("hidden");
     search_btn.classList.remove("hidden");
