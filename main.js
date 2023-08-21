@@ -39,7 +39,7 @@ document.querySelectorAll(".main-nav-item-link").forEach((link) => {
 function openNavLink(e) {
   menuLink.classList.remove("hidden");
   // overlay to show
-  if (window_Width >= 768) {
+  if (window.innerWidth >= 768) {
     overlay.classList.add("overlay");
   }
   // Nav to work and highlight active nav link
@@ -74,7 +74,6 @@ document.addEventListener("mouseup", function (e) {
 // back button functionality
 back_btn.addEventListener("click", function () {
   menuLink.classList.add("hidden");
-  // targetElement.classList.remove("toppest");
   if (window.innerWidth < 768) {
     back_btn.classList.add("hidden");
     search_btn.classList.remove("hidden");

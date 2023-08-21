@@ -83,8 +83,6 @@ button {
 
 .hidden {
   visibility: hidden;
-  // transition: visibility 0.2s 0.3s ease-in-out;
-  // width: 100%;
 }
 
 .overlay {
@@ -99,10 +97,8 @@ button {
 .topper {
   z-index: 111 !important ;
   position: relative;
-
   filter: invert(39%) sepia(96%) saturate(4%) hue-rotate(314deg) brightness(82%)
     contrast(87%);
-  // color: rgb(0, 0, 0, 0.7);
 }
 .toppest {
   z-index: 11111 !important ;
@@ -274,7 +270,6 @@ button {
 
   .searchField {
     .search-input {
-      // background-color: var(--color-accent);
       background-image: linear-gradient(
         to right,
         rgb(231, 45, 45, 0.7),
@@ -290,7 +285,6 @@ button {
       border-radius: 5rem;
       border: none;
       padding: 1rem 1rem 1rem 5.5rem;
-      // transition: all 1s 1s ease-in-out;
 
       &::placeholder {
         color: #ccc;
@@ -319,6 +313,7 @@ button {
       @media screen and (min-width: 768px) {
         transform: translate(100%, 0);
         background-color: transparent;
+        transition: all 1s ease;
       }
     }
   }
@@ -599,7 +594,9 @@ button {
 .menu {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(rgb(30, 37, 50), rgb(40, 41, 60));
+  // background-image: linear-gradient(rgb(30, 37, 50), rgb(40, 41, 60));
+  background: rgb(123 157 196 / 26%);
+  backdrop-filter: blur(16px);
   padding: 1rem;
   color: #fff;
   position: fixed;
@@ -662,10 +659,12 @@ button {
   padding: 0.3rem;
   margin: 0.3rem 0;
   font-family: var(--font-secondary);
+  // transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: #999;
     border-radius: 5rem;
+    transition: all 0.3s ease-in-out;
   }
   @media screen and (min-width: 768px) {
     width: 33.33%;
