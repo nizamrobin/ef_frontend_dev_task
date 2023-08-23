@@ -33,6 +33,8 @@ button {
 .icon {
   cursor: pointer;
   width: 2rem;
+}
+.icon-color {
   filter: invert(98%) sepia(2%) saturate(361%) hue-rotate(325deg)
     brightness(119%) contrast(100%);
 }
